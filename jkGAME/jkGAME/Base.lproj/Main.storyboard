@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="jkGAME" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相手" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHY-6Z-8r2">
+                                <rect key="frame" x="283" y="170" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLR-sC-2m9">
+                                <rect key="frame" x="283" y="289" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-kj-5fz">
+                                <rect key="frame" x="385" y="415" width="50" height="50"/>
+                                <state key="normal" title="パー" backgroundImage="pa.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_pa_dwn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uCG-tf-D4S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c42-ci-MfY">
+                                <rect key="frame" x="270" y="440" width="100" height="60"/>
+                                <state key="normal" title=" " backgroundImage="again.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_again_dwn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nfu-oG-ruQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoa-f2-jvd">
+                                <rect key="frame" x="278" y="360" width="50" height="50"/>
+                                <state key="normal" title="チョキ" backgroundImage="tyo.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_tyoki_dwn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N7d-pj-EsZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMN-Y6-gXo">
+                                <rect key="frame" x="185" y="411" width="50" height="50"/>
+                                <state key="normal" title="グー" backgroundImage="gu.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_gu_dwn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RZV-gr-x76"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ジャンケン..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kM-TP-wG2">
+                                <rect key="frame" x="0.0" y="15" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlp-H6-dAv" userLabel="Image View_aite">
+                                <rect key="frame" x="275" y="156" width="50" height="50"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVn-gM-P1D" userLabel="Image View_kekka">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="c42-ci-MfY" secondAttribute="centerX" id="3Cz-Hs-nwg"/>
+                            <constraint firstAttribute="centerX" secondItem="SHY-6Z-8r2" secondAttribute="centerX" id="B4c-el-dDw"/>
+                            <constraint firstAttribute="centerX" secondItem="DMN-Y6-gXo" secondAttribute="centerX" constant="100" id="EkB-uv-xUH"/>
+                            <constraint firstAttribute="centerX" secondItem="cZZ-kj-5fz" secondAttribute="centerX" constant="-100" id="I5U-eC-gv4"/>
+                            <constraint firstItem="zlp-H6-dAv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="130" id="LF6-rS-glW"/>
+                            <constraint firstAttribute="centerY" secondItem="JLR-sC-2m9" secondAttribute="centerY" id="LNn-rw-ABT"/>
+                            <constraint firstItem="cZZ-kj-5fz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="395" id="Lgr-Jn-Ljy"/>
+                            <constraint firstAttribute="centerX" secondItem="hoa-f2-jvd" secondAttribute="centerX" id="Qou-I9-CzI"/>
+                            <constraint firstItem="8kM-TP-wG2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="15" id="Qxb-lF-ukK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DMN-Y6-gXo" secondAttribute="bottom" constant="170" id="Wj5-nB-Tx9"/>
+                            <constraint firstAttribute="centerX" secondItem="OVn-gM-P1D" secondAttribute="centerX" id="Yc7-0c-77O"/>
+                            <constraint firstAttribute="centerX" secondItem="JLR-sC-2m9" secondAttribute="centerX" id="Ynq-Mu-g6P"/>
+                            <constraint firstItem="hoa-f2-jvd" firstAttribute="top" secondItem="JLR-sC-2m9" secondAttribute="bottom" constant="50" id="d3Q-ZL-qqJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cZZ-kj-5fz" secondAttribute="bottom" constant="170" id="fxz-K5-lGj"/>
+                            <constraint firstItem="c42-ci-MfY" firstAttribute="top" secondItem="hoa-f2-jvd" secondAttribute="bottom" constant="50" id="gNn-dc-OQ8"/>
+                            <constraint firstItem="DMN-Y6-gXo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="390" id="lcy-xm-ug9"/>
+                            <constraint firstItem="SHY-6Z-8r2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="150" id="rbt-Nf-bgp"/>
+                            <constraint firstAttribute="centerX" secondItem="zlp-H6-dAv" secondAttribute="centerX" id="u0d-A7-NGc"/>
+                            <constraint firstAttribute="centerX" secondItem="hoa-f2-jvd" secondAttribute="centerX" id="vMc-CS-2PZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_again" destination="c42-ci-MfY" id="W6n-jm-RfP"/>
+                        <outlet property="btn_gu" destination="DMN-Y6-gXo" id="6iO-aG-9AB"/>
+                        <outlet property="btn_pa" destination="cZZ-kj-5fz" id="JsC-h8-5eH"/>
+                        <outlet property="btn_tyoki" destination="hoa-f2-jvd" id="Bw1-fr-TCa"/>
+                        <outlet property="lbl_aite" destination="SHY-6Z-8r2" id="hv1-1L-Lqo"/>
+                        <outlet property="lbl_kekka" destination="JLR-sC-2m9" id="qeV-Ze-1L3"/>
+                        <outlet property="lbl_msg" destination="8kM-TP-wG2" id="3a0-5K-mkN"/>
+                        <outlet property="view_aite" destination="zlp-H6-dAv" id="ls6-m6-NaI"/>
+                        <outlet property="view_kekka" destination="OVn-gM-P1D" id="h1i-OZ-AGD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-230"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="again.png" width="160" height="80"/>
+        <image name="gu.png" width="90" height="90"/>
+        <image name="pa.png" width="90" height="90"/>
+        <image name="tyo.png" width="90" height="90"/>
+    </resources>
+</document>
